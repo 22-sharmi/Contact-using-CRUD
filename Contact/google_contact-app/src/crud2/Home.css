@@ -1,0 +1,73 @@
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon-container {
+    cursor: pointer;
+  }
+  
+  /* Adjust the styles based on your SVG size and design */
+  .icon-container img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    right: 10px;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-container.active .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content button {
+    padding: 8px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:last-child {
+    border-bottom: none;
+  }
+#IC-01{
+    /* display: none; */
+    background-color: white;
+  }
+#IC-01:hover{
+    /* display: inline; */
+    background-color: #ddd;
+}
+
+/* Show all columns by default */
+.table th,
+.table td {
+  display: table-cell;
+}
+
+/* Hide columns on small screens */  
+@media (max-width: 767px) {
+
+  .table th:not(:nth-child(1)):not(:nth-child(5)),
+  .table td:not(:nth-child(1)):not(:nth-child(5)) {
+    display: none;
+  }
+
+}
+
+/* Show all columns again on larger screens */
+@media (min-width: 768px) {
+  
+  .table th,
+  .table td {
+    display: table-cell;
+  }
+
+}

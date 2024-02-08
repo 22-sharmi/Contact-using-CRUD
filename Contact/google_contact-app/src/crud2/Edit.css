@@ -1,0 +1,19 @@
+.edit-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.back-button {
+  cursor: pointer;
+}
+
+.edit-input {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .edit-input {
+    width: calc(100% - 30px);
+  }
+}
